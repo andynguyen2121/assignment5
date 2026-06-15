@@ -121,8 +121,8 @@ const string INPUT_FILE = "ch5_sales.txt";
 const string OUTPUT_FILE = "ch5_report.txt";
 const int SENTINEL = -999;
 const int MAX_RETRIES = 3;
-const int DIVIDER_LEN = 10;
-const int COLUMN_WIDTH = 20;
+const int DIVIDER_LEN = 50;
+const int COLUMN_WIDTH = 25;
 
 // ===== SECTION 2: Input & Validation =====
 
@@ -190,7 +190,7 @@ int main () {
 
     outFile << endl;
 
-    outFile << left << setw(COLUMN_WIDTH) << "Volunteer"
+    outFile << left << setw(COLUMN_WIDTH) << "Volunteer(s)"
             << right << setw(COLUMN_WIDTH) << "Boxes Sold" << endl;
 
     for (int i = 0; i < DIVIDER_LEN; i++) {
@@ -362,15 +362,15 @@ Goodbye!
 
 /* Output: ch5_sales.txt 
 
-----------
-Volunteer                     Boxes Sold
-----------
-Andy                                  12
-Bobby                                  8
-----------
-Total Boxes:                          20
-Total Revenue:                    100.00
-Average Boxes:                     10.00
-Top Seller(s):                      Andy
+--------------------------------------------------
+Volunteer(s)                            Boxes Sold
+--------------------------------------------------
+Andy                                            12
+Bobby                                            8
+--------------------------------------------------
+Total Boxes:                                    20
+Total Revenue:                              100.00
+Average Boxes:                               10.00
+Top Seller(s):                                Andy
 
 */
